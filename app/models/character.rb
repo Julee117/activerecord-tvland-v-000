@@ -10,7 +10,7 @@ class Character < ActiveRecord::Base
 #     self.build_show(:name => "Firefly")
 #     self.save
 #   end
-# 
+#
 #   def build_network
 #     self.build_network(:call_letters => "Fox")
 #   end
