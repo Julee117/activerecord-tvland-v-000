@@ -6,7 +6,7 @@ class Actor < ActiveRecord::Base
     "#{self.first_name} #{self.last_name}"
   end
 
-  def list_roles 
-    self.characters
+  def list_roles
+    "#{self.characters} - #{self.shows}""
   end
 end
