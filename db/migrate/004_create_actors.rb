@@ -1,4 +1,4 @@
-class Actors < ActiveRecord::migration
+class CreateActors < ActiveRecord::migration
   def change
     create_table :actors do |t|
       t.string :first_name
