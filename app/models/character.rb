@@ -8,6 +8,7 @@ class Character < ActiveRecord::Base
 
   def build_show
     self.build_show(:name => "Firefly")
+    self.save
   end
 
   def build_network
