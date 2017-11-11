@@ -13,5 +13,6 @@ class Character < ActiveRecord::Base
 
   def build_network
     self.networks.build(:call_letters => "Fox")
+    self.save
   end
 end
