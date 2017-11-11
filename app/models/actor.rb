@@ -7,7 +7,7 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    Characters.joins("JOIN shows ON characters.show_id = shows.id").map do |actor|
+    self.joins(characters: :shows).map do |actor|
       "#{actor.name} - #{actor.shows.name}"
     end
   end
