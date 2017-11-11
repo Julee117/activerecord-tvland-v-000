@@ -12,7 +12,7 @@ class Character < ActiveRecord::Base
   end
 
   def build_network
-    self.networks.build(:call_letters => "Fox")
+    self.build_network(:call_letters => "Fox")
     self.save
   end
 end
